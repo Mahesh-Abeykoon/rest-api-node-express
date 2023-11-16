@@ -74,7 +74,6 @@ catch (error) {
 })
 
 app.delete("/delete/:id", async(req, res) => {
- 
   try {
       const taskId = req.params.id;
       const deleteTask = await Task.findByIdAndDelete(taskId)
